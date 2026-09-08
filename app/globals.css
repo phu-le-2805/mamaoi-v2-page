@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Design tokens rút từ OPTION 3.pdf — bảng màu pastel, coral làm điểm nhấn. */
+@theme {
+  --font-sans: var(--font-be-vietnam), ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #f0736b;
+  --color-primary-soft: #f9a8a2;
+  --color-primary-ink: #c6473f;
+
+  --color-bg: #fffbfa;
+  --color-surface: #fceced;
+  --color-card: #ffffff;
+
+  --color-ink: #2e2a2b;
+  --color-muted: #8a8285;
+  --color-line: #f1e3e3;
+
+  /* 6 tông card, đúng thứ tự lưới trong app */
+  --color-tone-pink: #fbdcdc;
+  --color-tone-green: #dee9dc;
+  --color-tone-blue: #d8e6f2;
+  --color-tone-purple: #e3deef;
+  --color-tone-cream: #fae7c7;
+  --color-tone-peach: #fadfd0;
+
+  --radius-card: 20px;
+  --radius-block: 28px;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
